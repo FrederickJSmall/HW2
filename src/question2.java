@@ -14,8 +14,8 @@ public class question2 {
 	    Calendar cal = Calendar.getInstance();
 	    cal.set(2015, Calendar.JANUARY, 1, 1, 1, 1);
 	    int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-	    //System.out.println(question.getDayString(dayOfWeek));
-	    System.out.printf("The first sunday of %d is January %d",year,question.getFirstSundayOfYear(year));
+	    System.out.printf("The first of January falls on a %s in %d\n",question.getDayString(dayOfWeek),year);
+	    System.out.printf("The first Sunday of %d is January %d\n",year,question.getFirstSundayOfYear(year));
 	
 		keyboard.close();
 		question = null;
@@ -39,6 +39,36 @@ public class question2 {
 		    }
 		    return "";
 	}
+	public String getMonthString(int day) {
+	    switch (day) {
+	      case Calendar.JANUARY:
+	        return "JANUARY";      
+	      case Calendar.FEBRUARY:
+	        return "FEBRUARY";
+	      case Calendar.MARCH:
+	        return "MARCH";
+	      case Calendar.APRIL:
+	        return "APRIL";
+	      case Calendar.MAY:
+	        return "MAY";
+	      case Calendar.JUNE:
+	        return "JUNE";
+	      case Calendar.JULY:
+	        return "JULY";
+	      case Calendar.AUGUST:
+	        return "AUGUST";
+	      case Calendar.SEPTEMBER:
+	        return "SEPTEMBER";
+	      case Calendar.OCTOBER:
+	        return "OCTOBER";
+	      case Calendar.NOVEMBER:
+	        return "NOVEMBER";
+	      case Calendar.DECEMBER:
+	        return "DECEMBER";
+
+	    }
+	    return "";
+}
 	public int getFirstSundayOfYear(int year) {
 	    Calendar cal = Calendar.getInstance();
 	    int dayOfWeek =0;
@@ -57,5 +87,13 @@ public class question2 {
 	   }
 	   while (process==true);
 	   return date;
+	}
+	public void displayCalendar(int year) {
+	   Calendar cal = Calendar.getInstance();
+	   int dayOfWeek =0;
+	   boolean process = true;
+	   System.out.printf("");
+	    	
+	   //return date;
 	}	
 }
