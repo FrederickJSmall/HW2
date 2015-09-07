@@ -111,9 +111,11 @@ public class question1 {
 		{
 			int printValue = Integer.parseInt(pyramid2[x]);
 			if (printValue == 0)
-				System.out.printf(" %s", " ");
+				//System.out.printf(" %s", " ");
+				System.out.printf("%s", "   ");
 			else
-				System.out.printf(" %s", pyramid2[x]);
+				//System.out.printf(" %s", pyramid2[x]);
+				System.out.printf("%3d", printValue);
 		}
 		System.out.println("");
 		//}
