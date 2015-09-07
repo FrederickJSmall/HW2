@@ -7,8 +7,8 @@ public class question3 {
 
 		System.out.println("Palindrome checker");
 		System.out.println("Enter a word and i will check to see if it is a plaindrome");		
-		//String word = keyboard.nextLine();
-		String word = "madam";
+		String word = keyboard.nextLine();
+		//String word = "madam";
 
 		System.out.println("Checking word");
 		System.out.println("");
