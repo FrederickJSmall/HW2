@@ -90,12 +90,24 @@ public class question2 {
 	   return date;
 	}
 	public void displayCalendar(int year) {
-	   Calendar cal = Calendar.getInstance();
-	   int dayOfWeek =0;
-	   boolean process = true;
-	   for (int i=0;i<12;i++)
-	   System.out.printf(" %s %d\n",getMonthString(i),year);
-	    	
+	   //Calendar cal = Calendar.getInstance();
+	   //int dayOfWeek =0;
+	   //boolean process = true;
+		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
+	    for (int i=0;i<12;i++)
+	    {
+	    	System.out.printf(" %s %d\n",getMonthString(i),year);
+	    	int days = daysInMonth[i];
+	    	for (int day=1;day<=days;day++)
+	    	{
+	    		
+	    	}
+	    	System.out.println("");
+	    }
+	   
+	    
+	   
+	   
 	   //return date;
 	}	
 }
