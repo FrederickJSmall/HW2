@@ -83,6 +83,7 @@ public class question1 {
 			{
 				value = Integer.parseInt(strValue)-x;
 				//System.out.println(value);
+				if (value <0 ) value = 0;
 			}
 			else 
 				value = 0;
@@ -108,7 +109,11 @@ public class question1 {
 		//}
 		for (int x = 0;x<width;x++)
 		{
-			System.out.printf(" %s", pyramid2[x]);
+			int printValue = Integer.parseInt(pyramid2[x]);
+			if (printValue == 0)
+				System.out.printf(" %s", "");
+			else
+				System.out.printf(" %s", pyramid2[x]);
 		}
 		System.out.println("");
 		//}
