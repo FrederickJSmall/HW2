@@ -16,7 +16,7 @@ public class question2 {
 	    int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
 	    System.out.printf("The first of January falls on a %s in %d\n",question.getDayString(dayOfWeek),year);
 	    System.out.printf("The first Sunday of %d is January %d\n",year,question.getFirstSundayOfYear(year));
-	    //System.out.println("" + question.displayCalendar(year));
+	    System.out.println("");
 	    question.displayCalendar(year);
 		keyboard.close();
 		question = null;
@@ -96,11 +96,20 @@ public class question2 {
 		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
 	    for (int i=0;i<12;i++)
 	    {
-	    	System.out.printf(" %s %d\n",getMonthString(i),year);
+	    	System.out.println("");
+	    	System.out.printf("%s %d\n",getMonthString(i),year);
+	    	System.out.printf(" Su Mo Tu We Th Fr Sa\n");
 	    	int days = daysInMonth[i];
+	    	int daysOnRow=0;
 	    	for (int day=1;day<=days;day++)
 	    	{
-	    		
+	    		if (daysOnRow==7)
+	    		{
+	    			System.out.println("");
+	    			daysOnRow=0;
+	    		}
+	    		System.out.printf("%3d",day);
+	    		daysOnRow++;
 	    	}
 	    	System.out.println("");
 	    }
