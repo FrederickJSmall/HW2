@@ -69,7 +69,37 @@ public class question2 {
 
 	    }
 	    return "";
-}
+	}
+	public int getMonthNumber(String month) {
+	    switch (month) {
+	      case "JANUARY":
+	        return Calendar.JANUARY;      
+	      case "FEBRUARY":
+	        return Calendar.FEBRUARY;
+	      case "MARCH":
+	        return Calendar.MARCH;
+	      case "APRIL":
+	        return Calendar.APRIL;
+	      case "MAY":
+	        return Calendar.MAY;
+	      case "JUNE":
+	        return Calendar.JUNE;
+	      case "JULY":
+	        return Calendar.JULY;
+	      case "AUGUST":
+	        return Calendar.AUGUST;
+	      case "SEPTEMBER":
+	        return Calendar.SEPTEMBER;
+	      case "OCTOBER":
+	        return Calendar.OCTOBER;
+	      case "NOVEMBER":
+	        return Calendar.NOVEMBER;
+	      case "DECEMBER":
+	        return Calendar.DECEMBER;
+
+	    }
+	    return -1;
+	}
 	public int getFirstSundayOfYear(int year) {
 	    Calendar cal = Calendar.getInstance();
 	    int dayOfWeek =0;
@@ -89,10 +119,30 @@ public class question2 {
 	   while (process==true);
 	   return date;
 	}
+	public int getFirstDayOfMonth(int year,int month) {
+	    Calendar cal = Calendar.getInstance();
+	    int dayOfWeek =0;
+	    //boolean process = true;
+	    ////String dayName = "";
+	    //int date = 1;
+	   //do
+	   //{ 
+		   //dayName = getDayString(dayOfWeek);
+		   cal.set(year, month, 1, 1, 1, 1);
+		   dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+		   //if (dayOfWeek == Calendar.SUNDAY)
+		//	  process = false;
+		//   else
+  		//	  date++;
+	   //}
+	   //while (process==true);
+	   return dayOfWeek;
+	}
 	public void displayCalendar(int year) {
 	   //Calendar cal = Calendar.getInstance();
 	   //int dayOfWeek =0;
 	   //boolean process = true;
+		int firstDayOfYear = getFirstSundayOfYear(year);
 		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
 	    for (int i=0;i<12;i++)
 	    {
@@ -101,16 +151,32 @@ public class question2 {
 	    	System.out.printf(" Su Mo Tu We Th Fr Sa\n");
 	    	int days = daysInMonth[i];
 	    	int daysOnRow=0;
-	    	for (int day=1;day<=days;day++)
-	    	{
+	    	int day=1;
+	    	int firstDayOfMonth = getFirstDayOfMonth(year,i);
+	    	boolean daysBypased = false;
+	    	if (firstDayOfMonth==0)
+	    		daysBypased = true;
+	    	//for (int day=1;day<=days;day++)
+	    	do {
+	    		for (int bypass=0;bypass<firstDayOfMonth-1;bypass++)
+	    		{
+	    			if (daysBypased == true) {
+	    				
+	    				break;
+	    			}
+	    			System.out.printf("%3s"," ");
+	    			daysOnRow++;
+	    		}
+	    		daysBypased = true;
 	    		if (daysOnRow==7)
 	    		{
 	    			System.out.println("");
 	    			daysOnRow=0;
 	    		}
 	    		System.out.printf("%3d",day);
+	    		day++;
 	    		daysOnRow++;
-	    	}
+	    	} while (day<=days);
 	    	System.out.println("");
 	    }
 	   
