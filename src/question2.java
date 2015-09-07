@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 //import java.util.GregorianCalendar;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class question2 {
 
 		question2 question = new question2();
 		
-		int year = 2015;
+		int year = 2016;
 		
 	    Calendar cal = Calendar.getInstance();
 	    cal.set(2015, Calendar.JANUARY, 1, 1, 1, 1);
@@ -139,11 +140,13 @@ public class question2 {
 	   return dayOfWeek;
 	}
 	public void displayCalendar(int year) {
-	   //Calendar cal = Calendar.getInstance();
-	   //int dayOfWeek =0;
+		GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+		boolean isLeapYear = cal.isLeapYear(year);
 	   //boolean process = true;
 		int firstDayOfYear = getFirstSundayOfYear(year);
 		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
+		if (isLeapYear)
+			daysInMonth[1]=29;
 	    for (int i=0;i<12;i++)
 	    {
 	    	System.out.println("");
