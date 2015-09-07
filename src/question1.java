@@ -7,8 +7,8 @@ public class question1 {
 		Scanner keyboard = new Scanner(System.in);
 
 		System.out.println("How tall do you want the pyramid");
-		//int height = keyboard.nextInt();
-		int height = 5;
+		int height = keyboard.nextInt();
+		//int height = 5;
 		int width = ((height-1)) * 2 + 1;
 		int middle = height;//(width/2)-1;
 		
