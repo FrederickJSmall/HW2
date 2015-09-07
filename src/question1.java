@@ -21,6 +21,7 @@ public class question1 {
 		}
 
 		System.out.println("We are done");
+		question = null;
 		keyboard.close();
 	}
 	public void buildPyramid(int height,int width,int middle)
