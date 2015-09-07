@@ -7,15 +7,20 @@ public class question2 {
 	{
 		Scanner keyboard = new Scanner(System.in);
 
+		question2 question = new question2();
+		
+		int year = 2015;
+		
 	    Calendar cal = Calendar.getInstance();
 	    cal.set(2015, Calendar.JANUARY, 1, 1, 1, 1);
 	    int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-	    System.out.println(getDayString(dayOfWeek));
-	    
-
+	    //System.out.println(question.getDayString(dayOfWeek));
+	    System.out.printf("The first sunday of %d is January %d",year,question.getFirstSundayOfYear(year));
+	
 		keyboard.close();
+		question = null;
 	}
-	  public static final String getDayString(int day) {
+	public String getDayString(int day) {
 		    switch (day) {
 		      case Calendar.SUNDAY:
 		        return "SUNDAY";      
@@ -33,5 +38,24 @@ public class question2 {
 		        return "SATURDAY";
 		    }
 		    return "";
-		  }
+	}
+	public int getFirstSundayOfYear(int year) {
+	    Calendar cal = Calendar.getInstance();
+	    int dayOfWeek =0;
+	    boolean process = true;
+	    //String dayName = "";
+	    int date = 1;
+	   do
+	   { 
+		   //dayName = getDayString(dayOfWeek);
+		   cal.set(year, Calendar.JANUARY, date, 1, 1, 1);
+		   dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+		   if (dayOfWeek == Calendar.SUNDAY)
+			  process = false;
+		   else
+  			  date++;
+	   }
+	   while (process==true);
+	   return date;
+	}	
 }
