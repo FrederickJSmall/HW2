@@ -8,7 +8,7 @@ public class question1 {
 
 		System.out.println("How tall do you want the pyramid");
 		//int height = keyboard.nextInt();
-		int height = 3;
+		int height = 5;
 		int width = ((height-1)) * 2 + 1;
 		int middle = height;//(width/2)-1;
 		
@@ -111,7 +111,7 @@ public class question1 {
 		{
 			int printValue = Integer.parseInt(pyramid2[x]);
 			if (printValue == 0)
-				System.out.printf(" %s", "");
+				System.out.printf(" %s", " ");
 			else
 				System.out.printf(" %s", pyramid2[x]);
 		}
