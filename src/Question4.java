@@ -23,5 +23,6 @@ public class Question4 {
 			}
 			
 		}
+		System.out.println("We are done");
 	}
 }

@@ -1,0 +1,18 @@
+Palindrome checker
+Enter a word and i will check to see if it is a plaindrome
+madam
+Checking madam
+Congratulations madam is a palindrome
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW2\src>java Question3
+Palindrome checker
+Enter a word and i will check to see if it is a plaindrome
+Madam
+Checking Madam
+Congratulations Madam is a palindrome
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW2\src>java Question3
+Palindrome checker
+Enter a word and i will check to see if it is a plaindrome
+cookie
+Checking cookie
+Sorry cookie is not a palindrome. Please try again
+Backwards its eikooc

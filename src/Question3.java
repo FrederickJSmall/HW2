@@ -10,18 +10,21 @@ public class Question3 {
 		String word = keyboard.nextLine();
 		//String word = "madam";
 
-		System.out.println("Checking word");
+		System.out.printf("Checking %s",word);
 		System.out.println("");
 
 		
 		Question3 question = new Question3();
 		String reverseWord = question.reverse(word);
 		
-		if (word.equals(reverseWord))
-			System.out.println("Congratulations word is a palindrome");
+		if (word.toLowerCase().equals(reverseWord.toLowerCase()))
+			System.out.printf("Congratulations %s is a palindrome",word);
 		else
-			System.out.println("Sorry word is not a palindrome. Please try again");
-		
+		{
+			System.out.printf("Sorry %s is not a palindrome. Please try again\n",word);
+			System.out.printf("Backwards its %s\n",reverseWord);
+		}
+
 		question = null;
 		keyboard.close();
 	}

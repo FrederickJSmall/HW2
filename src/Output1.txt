@@ -1,0 +1,31 @@
+How tall do you want the pyramid
+12
+Width=23,Height=12,Middle=12
+
+Calculating
+                                   1
+                                1  2  1
+                             1  2  3  2  1
+                          1  2  3  4  3  2  1
+                       1  2  3  4  5  4  3  2  1
+                    1  2  3  4  5  6  5  4  3  2  1
+                 1  2  3  4  5  6  7  6  5  4  3  2  1
+              1  2  3  4  5  6  7  8  7  6  5  4  3  2  1
+           1  2  3  4  5  6  7  8  9  8  7  6  5  4  3  2  1
+        1  2  3  4  5  6  7  8  9 10  9  8  7  6  5  4  3  2  1
+     1  2  3  4  5  6  7  8  9 10 11 10  9  8  7  6  5  4  3  2  1
+  1  2  3  4  5  6  7  8  9 10 11 12 11 10  9  8  7  6  5  4  3  2  1
+We are done
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW2\src>java Question1
+How tall do you want the pyramid
+5
+Width=9,Height=5,Middle=5
+
+Calculating
+              1
+           1  2  1
+        1  2  3  2  1
+     1  2  3  4  3  2  1
+  1  2  3  4  5  4  3  2  1
+We are done

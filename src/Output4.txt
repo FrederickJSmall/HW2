@@ -1,0 +1,77 @@
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW2\src>java Question4
+**** Outer=1
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=2
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=3
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=4
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=5
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=6
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=7
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=8
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=9
+     Inner=1
+     Inner=2
+     Inner=3
+     Inner=4
+     Inner=5
+     Breaking inner
+
+**** Outer=10
+     Inner=1
+     Breaking outter
+We are done
