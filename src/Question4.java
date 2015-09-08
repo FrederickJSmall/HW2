@@ -1,3 +1,9 @@
+/*
+ * Frederick Small
+ * CISC 3150
+ * HW 2
+ * 
+ */
 public class Question4 {
 	public static void main (String[] args)
 	{

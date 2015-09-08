@@ -1,3 +1,9 @@
+/*
+ * Frederick Small
+ * CISC 3150
+ * HW 2
+ * 
+ */
 import java.util.Scanner;
 
 public class Question3 {

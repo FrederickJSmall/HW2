@@ -1,3 +1,9 @@
+/*
+ * Frederick Small
+ * CISC 3150
+ * HW 2
+ * 
+ */
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 //import java.util.GregorianCalendar;
