@@ -3,14 +3,15 @@ import java.util.GregorianCalendar;
 //import java.util.GregorianCalendar;
 import java.util.Scanner;
 
-public class question2 {
+public class Question2 {
 	public static void main (String[] args)
 	{
 		Scanner keyboard = new Scanner(System.in);
 
-		question2 question = new question2();
+		Question2 question = new Question2();
 		
-		int year = 2016;
+	    System.out.println("Please enter a year");
+		int year = keyboard.nextInt();
 		
 	    Calendar cal = Calendar.getInstance();
 	    cal.set(2015, Calendar.JANUARY, 1, 1, 1, 1);
@@ -143,7 +144,7 @@ public class question2 {
 		GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
 		boolean isLeapYear = cal.isLeapYear(year);
 	   //boolean process = true;
-		int firstDayOfYear = getFirstSundayOfYear(year);
+		//int firstDayOfYear = getFirstSundayOfYear(year);
 		int[] daysInMonth = {31,28,31,30,31,30,31,31,30,31,30,31};
 		if (isLeapYear)
 			daysInMonth[1]=29;

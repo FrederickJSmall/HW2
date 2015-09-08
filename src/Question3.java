@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class question3 {
+public class Question3 {
 	public static void main (String[] args)
 	{
 		Scanner keyboard = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class question3 {
 		System.out.println("");
 
 		
-		question3 question = new question3();
+		Question3 question = new Question3();
 		String reverseWord = question.reverse(word);
 		
 		if (word.equals(reverseWord))

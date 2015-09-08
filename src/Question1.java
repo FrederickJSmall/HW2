@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class question1 {
+public class Question1 {
 	public static void main (String[] args)
 	{
 		Scanner keyboard = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class question1 {
 		System.out.println("");
 		System.out.println("Calculating");
 		
-		question1 question = new question1();
+		Question1 question = new Question1();
 		for (int i=1;i<=height;i++)
 		{
 			question.buildPyramid(i,width,middle);
